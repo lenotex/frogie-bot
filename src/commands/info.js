@@ -4,9 +4,9 @@ const {MessageEmbed} = require("discord.js");
 module.exports = {
     data: new SlashCommandBuilder()
         .setName("info")
-        .setDescription("Shows Information about the Server")
-        .addSubcommand(subCommand => subCommand.setName("server").setDescription("Show Information about the Server"))
-        .addSubcommand(subcommand => subcommand.setName("member").setDescription("Show Information about a Member")
+        .setDescription("Shows information about the server and members")
+        .addSubcommand(subCommand => subCommand.setName("server").setDescription("Shows information about the server"))
+        .addSubcommand(subcommand => subcommand.setName("member").setDescription("Shows information about a member")
             .addUserOption(option => option.setName("member").setDescription("Member").setRequired(true))),
     async execute(interaction){
         switch (interaction.options.getSubcommand()){

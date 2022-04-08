@@ -1,7 +1,0 @@
-﻿const { SlashCommandBuilder } = require("@discordjs/builders")
-
-module.exports = {
-    data: new SlashCommandBuilder().setName("reactionRole").setDescription("Create, edit or delete reaction role"),
-    async execute(interaction){
-    }
-}
