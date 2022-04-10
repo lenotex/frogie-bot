@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9b2fa-fbbf-4880-9b05-3f387b95ce22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/reactionRoles.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/events/messageReactionAdd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/reactionRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deploy-commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-commands.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/reactionRoles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRoles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/messageReactionAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/messageReactionAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
       <workItem from="1649435494548" duration="1309000" />
       <workItem from="1649508497405" duration="2264000" />
       <workItem from="1649587790466" duration="9936000" />
-      <workItem from="1649618489939" duration="4071000" />
+      <workItem from="1649618489939" duration="7928000" />
     </task>
     <servers />
   </component>
