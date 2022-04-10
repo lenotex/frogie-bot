@@ -8,20 +8,20 @@ module.exports = {
         .addSubcommand(subCommand => subCommand.setName("server").setDescription("Shows information about the server"))
         .addSubcommand(subcommand => subcommand.setName("member").setDescription("Shows information about a member")
             .addUserOption(option => option.setName("member").setDescription("Member").setRequired(true))),
-    async execute(interaction){
-        switch (interaction.options.getSubcommand()){
+    async execute(client){
+        switch (client.options.getSubcommand()){
             case "server":{
-                interaction.reply({embeds: [
+                client.reply({embeds: [
                     new MessageEmbed()
-                        .setTitle(`Information for the Server ${interaction.guild.name}`)
+                        .setTitle(`Information for the Server ${client.guild.name}`)
                         .addFields([
                             {
                                 name: "Channels",
-                                value: `${interaction.guild.channels.cache.size} Channels`
+                                value: `${client.guild.channels.cache.size} Channels`
                             },
                             {
                                 name: "Created",
-                                value: `<t:${Math.round(interaction.guild.createdTimestamp/1000)}>`,
+                                value: `<t:${Math.round(client.guild.createdTimestamp/1000)}>`,
                                 inline: true
                             }
                         ])
@@ -29,8 +29,8 @@ module.exports = {
                 break
             }
             case "member":{
-                const member = interaction.options.getMember("member")
-                interaction.reply({embeds: [
+                const member = client.options.getMember("member")
+                client.reply({embeds: [
                         new MessageEmbed()
                             .setTitle(`Information for ${member.user.tag}`)
                             .setThumbnail(member.user.avatarURL({dynamic: true}))

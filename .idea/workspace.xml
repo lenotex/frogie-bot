@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9b2fa-fbbf-4880-9b05-3f387b95ce22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/reactionRole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/commands/reactionRoles.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/messageReactionAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/commands/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/ping.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/ping.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/reactionRole.jsrsgd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/reactionRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deploy-commands.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/deploy-commands.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27QxuKuvK0UnSFdh2iet3B2jvUu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,9 +35,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/events" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="AtomConfig" />
+    <property name="ts.external.directory.path" value="C:\Users\leonf\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leonf\Documents\GitHub\frogie-bot\src\events" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -42,6 +55,10 @@
       <updated>1649266336425</updated>
       <workItem from="1649266337365" duration="530000" />
       <workItem from="1649266888441" duration="3152000" />
+      <workItem from="1649435494548" duration="1309000" />
+      <workItem from="1649508497405" duration="2264000" />
+      <workItem from="1649587790466" duration="9936000" />
+      <workItem from="1649618489939" duration="4071000" />
     </task>
     <servers />
   </component>
