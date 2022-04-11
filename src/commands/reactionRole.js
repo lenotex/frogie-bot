@@ -20,9 +20,9 @@ module.exports = {
             case "create":{
                 const messageLink = client.options.getString("message-link")
                 const role = client.options.getRole("role")
+                const emoji = client.options.getString("emoji")
                 try{
                     const messageID = messageLink.substr(messageLink.lastIndexOf("/") + 1, messageLink.length);
-                    const emoji = client.options.getString("emoji")
 
                     client.channel.messages.fetch(messageID)
                         .then(message => {
@@ -38,6 +38,13 @@ module.exports = {
             }
             case "delete":{
                 const messageLink = client.options.getString("message-link")
+                const emoji = client.options.getString("emoji")
+                try{
+                    const messageID = messageLink.substr(messageLink.lastIndexOf("/") + 1, messageLink.length);
+                    reactionRolesConfig.reactions.delete()
+                }catch (e) {
+                    console.log(e)
+                }
             }
         }
     }

@@ -1,28 +1,36 @@
-﻿const {MessageReaction, User} = require("discord.js");
+﻿const {client} = require("discord.js");
 const fs = require("fs")
 const reactionRolesConfig = JSON.parse(fs.readFileSync('src/commands/reactionRoles.json', 'utf8'))
 
 module.exports = {
-    name: "messageReactionAdd",
+    name: "raw",
     /**
-     * @param {MessageReaction} reaction
-     * @param {User} user
+     *
      */
-    execute(reaction, user) {
-        console.log("Reaction")
+    execute(packet) {
+        if (!['MESSAGE_REACTION_ADD', 'MESSAGE_REACTION_REMOVE'].includes(packet.t)) return;
 
-        if (reaction.message.partial) reaction.fetch()
-        if (reaction.partial) reaction.fetch()
-        if (user.bot || !reaction.message.guild) return
+        if (packet.t === 'MESSAGE_REACTION_ADD') {
+            console.log("ADDED");
+            for (let index = 0; index < reactionRolesConfig.reactions.length; index++) {
+                let reactionRole = reactionRolesConfig.reactions[index]
+                console.log(packet.d.message_id)
+                console.log(reactionRole.messageId)
+                console.log(packet.d.emoji.name)
+                console.log(reactionRole.emoji)
+                if (packet.d.message_id === reactionRole.messageId && packet.d.emoji.name === reactionRole.emoji && !packet.d.message.guild.members.cache.get(packet.d.user.id).roles.cache.has(reactionRole.role)) {
+                    packet.d.message.guild.members.cache.get(packet.d.user.id).roles.add(reactionRole.role)
+                }
+            }
+        }
 
-        for (let index = 0; index < reactionRolesConfig.reactions.length; index++) {
-            let reactionRole = reactionRolesConfig.reactions[index]
-            console.log(reaction.message.id)
-            console.log(reactionRole.messageId)
-            console.log(reaction.emoji.name)
-            console.log(reactionRole.emoji)
-            if (reaction.message.id === reactionRole.messageId && reaction.emoji === reactionRole.emoji && !reaction.message.guild.members.cache.get(user.id).roles.cache.has(reactionRole.role)) {
-                reaction.message.guild.members.cache.get(user.id).roles.add(reaction)
+        if (packet.t === 'MESSAGE_REACTION_REMOVE') {
+            console.log("REMOVED");
+            for (let index = 0; index < reactionRolesConfig.reactions.length; index++) {
+                let reactionRole = reactionRolesConfig.reactions[index]
+                if (packet.d.message_id === reactionRole.messageId && packet.d.emoji.name === reactionRole.emoji && packet.d.message.guild.members.cache.get(packet.d.user.id).roles.cache.has(reactionRole.role)) {
+                    packet.d.message.guild.members.cache.get(packet.d.user.id).roles.remove(reactionRole.role)
+                }
             }
         }
     }
