@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9b2fa-fbbf-4880-9b05-3f387b95ce22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/commands/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/guildMemberRemove.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/reactionRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRole.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commands/reactionRoles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRoles.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/guildMemberAdd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/events/messageReactionAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/messageReactionAdd.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,11 +39,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/events" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="ts.external.directory.path" value="C:\Users\leonf\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="C:\Users\Admin\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\frogie-bot\src\events" />
       <recent name="C:\Users\leonf\Documents\GitHub\frogie-bot\src\events" />
     </key>
   </component>
@@ -65,6 +64,8 @@
       <workItem from="1649618489939" duration="7928000" />
       <workItem from="1649707034578" duration="429000" />
       <workItem from="1649707487734" duration="2852000" />
+      <workItem from="1649756004886" duration="4817000" />
+      <workItem from="1649764870165" duration="1049000" />
     </task>
     <servers />
   </component>

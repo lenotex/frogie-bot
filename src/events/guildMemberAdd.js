@@ -14,5 +14,6 @@ module.exports = {
                     .setColor("BLURPLE")
             ]
         })
+        console.log(`${member.toString()} joined the Server!`)
     }
 }
