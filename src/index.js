@@ -2,12 +2,13 @@ require("dotenv").config()
 const fs = require("fs")
 const { Client, Collection, Intents } = require("discord.js")
 
-const client = new Client({intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS,Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS]})
+const client = new Client({
+    intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS,Intents.FLAGS.GUILD_EMOJIS_AND_STICKERS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MESSAGE_REACTIONS],
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION']})
 client.commands = new Collection()
 
 const commandFiles = fs.readdirSync("./src/commands").filter(file => file.endsWith(".js"))
 const eventFiles = fs.readdirSync("./src/events").filter(file => file.endsWith(".js"))
-
 
 commandFiles.forEach(commandFile => {
     const command = require(`./commands/${commandFile}`)

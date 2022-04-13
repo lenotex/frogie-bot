@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbb9b2fa-fbbf-4880-9b05-3f387b95ce22" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/events/guildMemberRemove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/events/messageReactionRemove.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/events/guildMemberAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/guildMemberAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/reactionRole.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRole.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commands/reactionRoles.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/commands/reactionRoles.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/events/messageReactionAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/messageReactionAdd.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +41,16 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/events" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Users\Admin\AppData\Local\JetBrains\Toolbox\apps\IDEA-U\ch-0\213.7172.25\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\Documents\GitHub\frogie-bot\src\events" />
       <recent name="C:\Users\leonf\Documents\GitHub\frogie-bot\src\events" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\Documents\GitHub\frogie-bot\src\events\asdads" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -65,7 +70,13 @@
       <workItem from="1649707034578" duration="429000" />
       <workItem from="1649707487734" duration="2852000" />
       <workItem from="1649756004886" duration="4817000" />
-      <workItem from="1649764870165" duration="1049000" />
+      <workItem from="1649764870165" duration="5513000" />
+      <workItem from="1649779760388" duration="622000" />
+      <workItem from="1649794401103" duration="4724000" />
+      <workItem from="1649832412904" duration="2082000" />
+      <workItem from="1649856748519" duration="620000" />
+      <workItem from="1649858958871" duration="3075000" />
+      <workItem from="1649868969146" duration="176000" />
     </task>
     <servers />
   </component>

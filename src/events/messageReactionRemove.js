@@ -2,7 +2,7 @@
 const {MessageReaction, User} = require("discord.js");
 
 module.exports = {
-    name: "messageReactionAdd",
+    name: "messageReactionRemove",
     /**
      *  @param {MessageReaction} reaction
      *  @param {User} user
@@ -17,8 +17,8 @@ module.exports = {
 
         for (let i = 0; i < reactionRolesConfig.reactions.length; i++) {
             let reactionRole = reactionRolesConfig.reactions[i]
-            if (reaction.message.id === reactionRole.messageId && (reactionRole.emoji).includes(reaction.emoji.name.toString()) && !reaction.message.guild.members.cache.get(user.id).roles.cache.has(reactionRole.role)) {
-                reaction.message.guild.members.cache.get(user.id).roles.add(reactionRole.role)
+            if (reaction.message.id === reactionRole.messageId && (reactionRole.emoji).includes(reaction.emoji.name.toString()) && reaction.message.guild.members.cache.get(user.id).roles.cache.has(reactionRole.role)) {
+                reaction.message.guild.members.cache.get(user.id).roles.remove(reactionRole.role)
             }
         }
     }
